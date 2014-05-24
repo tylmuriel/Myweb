@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background:url("../img/background.png") repeat;
+}
+#begin{
+    position: relative;
+    width:300px;
+    height: 300px;
+    left: 40%;
+    top:30%;
+    border-radius: 50%;
+    background:url("../img/profile.jpg");
+    -webkit-box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+

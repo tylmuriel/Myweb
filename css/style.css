@@ -1,8 +1,9 @@
-html{
+html,body{
     margin: 0;
     padding: 0;
     width:100%;
     height:100%;
+
 }
 .nav{
     list-style: none;
@@ -10,6 +11,7 @@ html{
     width:40em;
     right:0em;
     top:2em;
+    z-index: 1000;
 }
 .nav li{
     float:left;
@@ -20,16 +22,26 @@ html{
 }
 .nav li a{
     text-decoration: none;
-    color: white;
+    color: #dbdbdb;
     font-size: 1.5em;
     font-family: "Chaparral Pro";
 }
 
 .nav li a:hover{
-    border-bottom:0.3em solid white;/*下边框线，1象素，实线，颜色c00*/
+    border-bottom:0.3em solid white;
+}
+#symbol{
+    width:3em;
+    height: 3em;
+    background: url("../img/symbol.png") no-repeat;
+    background-size: 100%;
+    margin-left: -8em;
+    margin-top: -0.8em;
 }
 .box{
-    width: 100%;
+    width:100%;
+    height: 100%;
+    overflow:hidden ;
 }
 .box h3{
     color: white;
@@ -39,29 +51,32 @@ html{
     font-size:14px;
     margin: 0;
 }
+
+
 #home{
-    background-color: #2980b9;
+    background-color: #181818;
 }
 
 #hobby{
-    background-color: #16A085;
+    background-color: #08233e;
 }
 #word{
-    background-color: #e67e22;
+    background-color: #f8823c;
 }
 #project{
-    background-color: #e74c3c;
+    background-color: #ea2141;
 }
 #contact{
-    background-color: #9b59b6;
+    background-color: #a5448b;
 }
 .homeword{
     position: absolute;
     font-family: "Iskoola Pota";
     font-size: 3em;
-    top:15em;
-    left:1em;
+    top:78%;
+    left:5%;
     color: white;
+    z-index: 5;
 }
 .homeword strong{
     font-family: "impact";
@@ -70,7 +85,7 @@ html{
 
 .ih-item {
     position: relative;
-    left: 20%;
+    left: 40%;
     top:26%;
 }
 .ih-item,
@@ -170,7 +185,7 @@ html{
     font-style: italic;
     margin: 0 30px;
     font-family: "JasmineUPC";
-    font-size: 20px;
+    font-size: 1.8em;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -204,3 +219,181 @@ html{
     -o-transform: translateX(100%);
     transform: translateX(100%);
 }
+#topbanner{
+    position: absolute;
+    width: 0%;
+    height: 5%;
+    top:10%;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+#leftbanner{
+    position: absolute;
+    width: 5%;
+    height: 0%;
+    left: 10%;
+    top:0;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+#inner1{
+    position: absolute;
+    width:600px;
+    height:600px;
+    left:15%;
+    top:120%;
+    background: url("../img/inner4.png") no-repeat;
+    background-size: 100%;
+
+
+}
+#inner2{
+    position: relative;
+    width:500px;
+    height:500px;
+    left:8%;
+    top:10%;
+    background: url("../img/inner3.png") no-repeat;
+    background-size: 100%;
+    z-index: 5;
+
+}
+#inner3{
+    position: relative;
+    width:450px;
+    height:450px;
+    left:5.2%;
+    top:3%;
+    background: url("../img/inner1.png") no-repeat;
+    background-size: 100%;
+    z-index: 10;
+    -webkit-animation:myfirst 5s infinite;
+}
+#inner4{
+    position: absolute;
+    width:300px;
+    height:300px;
+    left:30%;
+    top:155%;
+    background: url("../img/inner2.png") no-repeat;
+    background-size: 100%;
+    z-index: 15;
+    -webkit-animation:myfirst 12s infinite;
+
+}
+#inner5{
+    position: absolute;
+    width:500px;
+    height:500px;
+    left:8%;
+    top:105%;
+    background: url("../img/inner2.png") no-repeat;
+    background-size: 100%;
+    z-index: 15;
+    -webkit-animation:myfirst 30s infinite;
+}
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+#cartoon{
+   position: absolute;
+   width:10%;
+    height: 5%;
+    color: #ffffff;
+    left: 10%;
+    top:170%;
+    font-size: 3em;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#photography{
+    position: absolute;
+    width:10%;
+    height: 5%;
+    color: #ffffff;
+    left: 16.5%;
+    top:125%;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 20;
+}
+#travel{
+    position: absolute;
+    width:10%;
+    height: 5%;
+    color: #ffffff;
+    left: 36.5%;
+    top:167%;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 20;
+}
+#info{
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    background: url("../img/information.png");
+    left:60%;
+    top:120%;
+}
+#info p{
+    color: #ffffff;
+    font-family: "impact";
+    font-size: 1.5em;
+    position: relative;
+    width:73.5%;
+    left: 15%;
+    top:32%;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+    #rightarrow{
+        display: none;
+        position: absolute;
+        width: 2%;
+        height:4%;
+        background: url("../img/rightarrow.png") no-repeat;
+        left: 88%;
+        top:150%;
+        opacity: 0.8;
+        background-size: 115%;
+}
+    #cartoonshow{
+        display: none;
+        position: absolute;
+        left: 100%;
+        top:100%;
+        background-color: #2980b9;
+    }
+    #line{
+        position: absolute;
+        width: 0%;
+        height: 2%;
+        top:80%;
+        left:25%;
+        background: url("../img/line.png") no-repeat;
+        background-size: 100% 50%;
+        z-index: 50;
+    }
+    .button{
+        position: absolute;
+        width: 1%;
+        height: 2.5%;
+        background: url("../img/button.png") no-repeat;
+        z-index: 55;
+        background-size: 100%;
+    }
+    #button1{
+        opacity: 0;
+        top:79.5%;
+        left: 30%;
+    }
+    #button2{
+        opacity: 0;
+        top:79.5%;
+        left: 50%;
+    }

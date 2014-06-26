@@ -3,7 +3,9 @@ html,body{
     padding: 0;
     width:100%;
     height:100%;
-
+}
+body{
+    overflow: hidden;
 }
 .nav{
     list-style: none;
@@ -60,7 +62,7 @@ html,body{
 #hobby{
     background-color: #08233e;
 }
-#word{
+#skill{
     background-color: #f8823c;
 }
 #project{
@@ -238,57 +240,57 @@ html,body{
 }
 #inner1{
     position: absolute;
-    width:600px;
-    height:600px;
+    /*width:600px;*/
+    /*height:600px;*/
     left:15%;
     top:120%;
-    background: url("../img/inner4.png") no-repeat;
-    background-size: 100%;
+    /*background: url("../img/inner4.png") no-repeat;*/
+    /*background-size: 100%;*/
 
 
 }
 #inner2{
     position: relative;
-    width:500px;
-    height:500px;
+    /*width:500px;*/
+    /*height:500px;*/
     left:8%;
     top:10%;
-    background: url("../img/inner3.png") no-repeat;
-    background-size: 100%;
+    /*background: url("../img/inner3.png") no-repeat;*/
+    /*background-size: 100%;*/
     z-index: 5;
 
 }
 #inner3{
     position: relative;
-    width:450px;
-    height:450px;
-    left:5.2%;
-    top:3%;
-    background: url("../img/inner1.png") no-repeat;
-    background-size: 100%;
+    /*width:450px;*/
+    /*height:450px;*/
+    left:-7.1%;
+    top:22.6%;
+    /*background: url("../img/inner1.png") no-repeat;*/
+    /*background-size: 100%;*/
     z-index: 10;
     -webkit-animation:myfirst 5s infinite;
 }
 #inner4{
     position: absolute;
-    width:300px;
-    height:300px;
+    /*width:300px;*/
+    /*height:300px;*/
     left:30%;
-    top:155%;
-    background: url("../img/inner2.png") no-repeat;
-    background-size: 100%;
+    top:145%;
+    /*background: url("../img/inner2.png") no-repeat;*/
+    /*background-size: 100%;*/
     z-index: 15;
     -webkit-animation:myfirst 12s infinite;
 
 }
 #inner5{
     position: absolute;
-    width:500px;
-    height:500px;
+    /*width:500px;*/
+    /*height:500px;*/
     left:8%;
-    top:105%;
-    background: url("../img/inner2.png") no-repeat;
-    background-size: 100%;
+    top:115%;
+    /*background: url("../img/inner2.png") no-repeat;*/
+    /*background-size: 100%;*/
     z-index: 15;
     -webkit-animation:myfirst 30s infinite;
 }
@@ -315,8 +317,8 @@ html,body{
     width:10%;
     height: 5%;
     color: #ffffff;
-    left: 16.5%;
-    top:125%;
+    left: 14%;
+    top:130%;
     font-size: 2em;
     cursor: pointer;
     z-index: 20;
@@ -326,28 +328,28 @@ html,body{
     width:10%;
     height: 5%;
     color: #ffffff;
-    left: 36.5%;
-    top:167%;
+    left: 38.5%;
+    top:162%;
     font-size: 1.5em;
     cursor: pointer;
     z-index: 20;
 }
 #info{
     position: absolute;
-    width: 30%;
-    height: 60%;
-    background: url("../img/information.png");
+    /*width: 30%;*/
+    /*height: 60%;*/
+    /*background: url("../img/information.png");*/
     left:60%;
     top:120%;
 }
 #info p{
+    position: absolute;
     color: #ffffff;
     font-family: "impact";
     font-size: 1.5em;
-    position: relative;
     width:73.5%;
-    left: 15%;
-    top:32%;
+    left: 12.5%;
+    top:35%;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
@@ -357,13 +359,38 @@ html,body{
         width: 2%;
         height:4%;
         background: url("../img/rightarrow.png") no-repeat;
-        left: 88%;
+        left: 88.5%;
         top:150%;
         opacity: 0.8;
         background-size: 115%;
+        cursor: pointer;
+}
+#photoarrow{
+    display: none;
+    position: absolute;
+    width: 2%;
+    height:4%;
+    background: url("../img/rightarrow.png") no-repeat;
+    left: 88.5%;
+    top:150%;
+    opacity: 0.8;
+    background-size: 115%;
+    cursor: pointer;
+}
+#travelarrow{
+    display: none;
+    position: absolute;
+    width: 2%;
+    height:4%;
+    background: url("../img/rightarrow.png") no-repeat;
+    left: 88.5%;
+    top:150%;
+    opacity: 0.8;
+    background-size: 115%;
+    cursor: pointer;
 }
     #cartoonshow{
-        display: none;
+        /*display: none;*/
         position: absolute;
         left: 100%;
         top:100%;
@@ -387,13 +414,203 @@ html,body{
         z-index: 55;
         background-size: 100%;
     }
-    #button1{
+    #ho1{
         opacity: 0;
+        color: #ffffff;
+        font-family: "impact";
+        font-size: 1em;
+    }
+    #ho1 img{
+        position: absolute;
+        /*width:500px;*/
+        /*height: 500px;*/
+        left:5%;
+        top:20%;
+    }
+
+
+    #ho1 div:nth-child(1){
         top:79.5%;
         left: 30%;
     }
-    #button2{
+    #ho1description p{
+    margin: 0;
+}
+
+    #ho1description{
+    position: absolute;
+        margin: 0;
+    width:18%;
+    left: 25%;
+    top:82%;
+}
+    #ho2{
         opacity: 0;
+        color: #ffffff;
+        font-family: "impact";
+        font-size: 1.2em;
+    }
+#ho2 div:nth-child(1){
         top:79.5%;
         left: 50%;
     }
+#ho2 img{
+    position: absolute;
+    left:37%;
+    top:20%;
+}
+#ho2description p{
+    margin: 0;
+}
+
+#ho2description{
+    position: absolute;
+    margin: 0;
+    width:18%;
+    left: 45%;
+    top:82%;
+}
+#ho3{
+    opacity: 0;
+    color: #ffffff;
+    font-family: "impact";
+    font-size: 1.2em;
+}
+#ho3 div:nth-child(1){
+    top:79.5%;
+    left: 70%;
+}
+#ho3 img{
+    position: absolute;
+    left:69%;
+    top:20%;
+}
+#ho3description p{
+    margin: 0;
+}
+
+#ho3description{
+    position: absolute;
+    margin: 0;
+    width:18%;
+    left: 65%;
+    top:82%;
+}
+#photographyshow{
+    /*display: none;*/
+    position: absolute;
+    left: 100%;
+    top:0%;
+    background-color: white;
+    font-size:0;
+}
+#photographyshow img{
+    opacity: 0.6;
+    width: 25%;
+    height:30%;
+}
+#photographyshow img:nth-child(1){
+    width: 100%;
+    height:40%;
+}
+#travelshow{
+    position: absolute;
+    left: 100%;
+    top:200%;
+    width: 100%;
+    height: 100%;
+    background-color: #27ae60;
+}
+#travelshow img{
+    width: 100%;
+    height: 80%;
+    left: 0%;
+    top:0%;
+}
+#mapgo{
+    display: none;
+    position: absolute;
+    z-index: 60;
+}
+#travelshow p{
+    color: #ffffff;
+    font-family: "impact";
+    font-size: 2.5em;
+    text-align: center;
+
+}
+#skill h3{
+    font-family: "impact";
+    font-size: 8em;
+    color: #ffffff;
+    margin-top:3%;
+    margin-bottom: 4%;
+    margin-left: 5%;
+}
+#skill p{
+    font-family: "impact";
+    font-size: 2em;
+    color: #ffffff;
+    margin-top: 0;
+    margin-left: 35%;
+
+}
+.img{
+    /*opacity: 0;*/
+    margin-left: 35%;
+
+}
+footer{
+    position: fixed;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-family: "impact";
+    font-size: 1.2em;
+    background-color:#181818 ;
+    bottom: 0;
+    text-align: center;
+    z-index: 1000;
+}
+#contact h3{
+    width: 80%;
+    font-family: "impact";
+    font-size: 2em;
+    color: #ffffff;
+    margin-top:10%;
+    margin-left: 5%;
+
+}
+#contact p{
+    text-align: center;
+    width: 80%;
+    font-family: "impact";
+    font-size: 2em;
+    color: #ffffff;
+    margin-top:10%;
+    margin-left: 9%;
+}
+.email{
+    color: black;
+}
+.email:hover{
+    color: darkseagreen;
+}
+#project h3{
+    color: #ffffff !important;
+    font-size: 1.5em;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+#project h2{
+    color: #000000;
+    font-size: 1.5em;
+    font-family: "Calibri";
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
